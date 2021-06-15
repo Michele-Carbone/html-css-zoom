@@ -11,6 +11,10 @@
     flex-direction: column;
 }
 
+.icon{
+    padding-right: 5px;
+}
+
 /*header*/
 header{
     height: 80px;
@@ -28,4 +32,49 @@ header button{
     background-color: rgb(80, 79, 79);
     border-radius: 5px;
     cursor: pointer;
+}
+
+/*Main layout con la barra scorrevole*/
+main{
+    flex-grow: 1;
+    background-color: rgb(0, 0, 0);
+    overflow-y: auto;
+}
+
+#room{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    flex-grow: 1;
+    height: 100%;
+}
+
+#room .partecipante{
+    position: relative;
+    border: 2px solid black ;
+}
+
+#room .partecipante-img{
+    object-fit: cover;
+}
+
+
+#room .name-partecipante{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    padding: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+/*footer con tutte le icone di zoom*/
+footer{
+    background-color: rgb(42, 42, 42);
+    height: 100px;
 }
